@@ -28,6 +28,14 @@ const io = socketio(server)
 
 io.on('connection', socket => {
     console.log("New user connected")
+
+    socket.username = "Anonymous"
+
+    socket.on('change_username', data => {
+        socket.username = data.username
+    })
 })
+
+
 
 
