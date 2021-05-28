@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
-const socketio = require('socket.io')
+const socketio = require('socket.io');
 const path = require('path');
-
 
 app.use(express.static(path.join(__dirname, '/public')));
 
@@ -21,7 +20,14 @@ app.get('/quickchat', (req, res) => {
     res.render('quickchat')
 });
 
-app.listen(3000, () => {
-    console.log("Listening on port 3000")
+const server = app.listen(process.env.PORT || 3000, () => {
+    console.log("server is running")
 })
+
+const io = socketio(server)
+
+io.on('connection', socket => {
+    console.log("New user connected")
+})
+
 
