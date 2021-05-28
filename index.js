@@ -1,30 +1,29 @@
 const express = require('express');
 const app = express();
-const socketio = require('socket.io');
-const path = require('path');
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server);
 
-app.use(express.static(path.join(__dirname, '/public')));
-
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'))
+app.set('view engine', 'ejs')
+app.use(express.static('public'))
+app.use(express.static('views'))
 
 app.get('/', (req, res) => {
-    res.render('home')
-});
-
-app.get('/reminders', (req, res) => {
-    res.render('reminders')
-});
+    res.render('index')
+})
 
 app.get('/quickchat', (req, res) => {
     res.render('quickchat')
-});
-
-const server = app.listen(process.env.PORT || 3000, () => {
-    console.log("server is running")
 })
 
-const io = socketio(server)
+app.get('/reminders', (req, res) => {
+    res.render('reminders')
+})
+
+server.listen(3000, () => {
+    console.log('listening on *:3000');
+});
 
 io.on('connection', socket => {
     console.log("New user connected")
@@ -34,6 +33,13 @@ io.on('connection', socket => {
     socket.on('change_username', data => {
         socket.username = data.username
     })
+
+    //handle the new message event
+    socket.on('new_message', data => {
+        console.log("new message")
+        io.sockets.emit('receive_message', { message: data.message, username: socket.username })
+    })
+
 })
 
 
