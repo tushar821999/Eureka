@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
+const socketio = require('socket.io')
 const path = require('path');
-const redditData = require('./data.json');
+
 
 app.use(express.static(path.join(__dirname, '/public')));
 
@@ -20,10 +21,7 @@ app.get('/quickchat', (req, res) => {
     res.render('quickchat')
 });
 
-app.get('/prochat', (req, res) => {
-    res.render('prochat')
-});
-
 app.listen(3000, () => {
     console.log("Listening on port 3000")
 })
+
