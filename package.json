@@ -15,7 +15,10 @@
     "express-session": "^1.17.2",
     "socket.io": "^4.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
   "repository": {
     "type": "git",
     "url": ""
