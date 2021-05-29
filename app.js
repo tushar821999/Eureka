@@ -38,11 +38,17 @@ app.get('/signup', (req, res) => {
 app.get('/landing', (req, res) => {
     res.render('landing')
 })
+app.get('/prochat', (req, res) => {
+    res.render('prochat')
+})
 
 server.listen(3000, () => {
     console.log('listening on *:3000');
 });
 
+/////////////////////
+//for the quick chat
+/////////////////////
 io.on('connection', socket => {
     console.log("New user connected")
 
@@ -59,13 +65,3 @@ io.on('connection', socket => {
     })
 
 })
-
-
-
-
-
-
-
-
-
-
