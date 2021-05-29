@@ -24,7 +24,7 @@ color:rgb(110, 110, 110);
 #help {
     background: #E35799;
     color:whitesmoke;
-    margin-left: 60%;
+    margin-left: 50%;
     border-radius: 15px;
     border: none;
     padding: 5px;
@@ -66,4 +66,18 @@ color:rgb(110, 110, 110);
 }
 #logo-navbar {
     height: 90px;
-}            
+}       
+.card-landing {
+    box-shadow: 1px 1px 10px #00000080;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    height: 300px;
+    text-align: center;
+    background-color:whitesmoke;
+    
+}     
+.btn-recent {
+    background-color: #E35799;
+    width: 100px;
+}

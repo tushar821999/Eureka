@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const path = require('path')
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
@@ -8,23 +7,36 @@ const io = new Server(server);
 
 
 
+//needed don't touch
 app.set('view engine', 'ejs')
-app.use(express.static(path.join(__dirname, 'public')))
-app.set('views', path.join(__dirname, 'views'))
+app.use(express.static('public'))
+app.use(express.static('views'))
+//needed don't touch
+
+
+
 app.get('/', (req, res) => {
     res.render('index')
 })
+
 app.get('/quickchat', (req, res) => {
     res.render('quickchat')
 })
+
 app.get('/reminders', (req, res) => {
     res.render('reminders')
 })
+
 app.get('/login', (req, res) => {
     res.render('login')
 })
+
 app.get('/signup', (req, res) => {
     res.render('signup')
+})
+
+app.get('/landing', (req, res) => {
+    res.render('landing')
 })
 
 server.listen(3000, () => {
