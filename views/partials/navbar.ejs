@@ -1,18 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <!--
-        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
-        -->
+        <!-- <a class="navbar-brand" href="#">
             <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_zeoujfto.json" background="transparent"
                 speed="1" style="width: 50px; height: 50px;" loop autoplay>
             </lottie-player>
         </a>
-        <b>Eureka</b>
+        <b>Eureka</b> -->
+        <a href="index" class="navbar-brand">
+            <img src="/logo/logo_eureka.png" alt="eureka logo" id="logo-navbar">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <button class="d-flex justify-content-around open-button px-2" id="help">GET HELP
+            NOW</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>YOU ARE NOT ALONE!</h3>
+                <p>If you feel like you might
+                    attempt suicide or harm yourself
+                    your should get urgent medical help or a helpline in your country.
+
+                </p>
+            </div>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -25,3 +39,27 @@
         </div>
     </div>
 </nav>
+<!--button script-->
+<script>
+    //get modal
+    let modal = document.getElementById("myModal");
+    //get button that opens modal
+    let btn = document.getElementById("help");
+    //get the <span> element that closes modal
+    let span = document.getElementsByClassName("close")[0];
+    //when the user clicks the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+    //when the user clicks on <span> x to close modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+    //when the user clicks anywhere outside modal
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
