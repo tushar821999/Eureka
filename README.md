@@ -14,5 +14,7 @@ Web Application for Mental Health for a Hackathon Hack.On 2.0
 URL: <a href="">Eureka</a>
 
 <h3>Author</h3>
-Kayle Robson <a href="https://github.com/revyrob">revyrob</a>
-Tushar Verma<a hred="https://github.com/search?q=tushar821999">tushar821999</a>
+<ul>
+  <li>Kayle Robson <a href="https://github.com/revyrob">revyrob</a></li>
+  <li>Tushar Verma<a href="https://github.com/search?q=tushar821999">tushar821999</a></li>
+  </ul>
