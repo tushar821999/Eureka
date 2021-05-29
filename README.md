@@ -1,5 +1,6 @@
 # Eureka
-Web Application for Mental Health for a Hackathon Hack.On 2.0
+Web Application for Mental Health Project
+Hackathon HackOn 2.0
 
 <h3>Built with</h3>
 <ul>
