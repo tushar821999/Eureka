@@ -1,0 +1,20 @@
+{
+    "Bobby": {
+        "name": "B",
+        "subscribers": 800000,
+        "description": "The football subreddit. News, results and discussion about the beautiful game.",
+        "posts": [
+            {
+                "title": "Marten de Roon to make pizza for more than 1,000 people in Bergamo if Atalanta win the Champions league.",
+                "author": "joeextreme"
+            },
+            {
+                "title": "Stephan Lichtsteiner has retired from professional football",
+                "author": "odd person"
+            },
+            {
+                "title": "OFFICIAL: Dani Parejo signs for Villareal.",
+                "author": "joeextreme"
+            }
+        ]
+    },

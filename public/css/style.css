@@ -1,0 +1,19 @@
+body {
+background: rgb(66,181,131);
+background: linear-gradient(0deg, rgb(66,181,131), rgb(247, 243, 243)); 
+color:rgb(110, 110, 110);
+}
+.btnMain {
+    background: rgb(89, 222, 240);
+    background: linear-gradient(0deg, rgb(89, 222, 240), rgb(60,181,131)); 
+    color: blanchedalmond;
+    font-weight: 700;
+    box-shadow: 5px 5px 2px 1px rgba(165, 165, 167, 0.2);
+}
+.card {
+    padding-top: 50px;
+}
+
+#quickchat {
+    height: 1000px;
+}
