@@ -15,3 +15,4 @@ URL: <a href="">Eureka</a>
 
 <h3>Author</h3>
 Kayle Robson <a href="https://github.com/revyrob">revyrob</a>
+Tushar Verma<a hred="https://github.com/search?q=tushar821999">tushar821999</a>
