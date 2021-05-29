@@ -15,6 +15,6 @@ URL: <a href="">Eureka</a>
 
 <h3>Author</h3>
 <ul>
-  <li>Kayle Robson <a href="https://github.com/revyrob">revyrob</a></li>
-  <li>Tushar Verma<a href="https://github.com/search?q=tushar821999">tushar821999</a></li>
+  <li>Kayle Robson: <a href="https://github.com/revyrob">revyrob</a></li>
+  <li>Tushar Verma: <a href="https://github.com/search?q=tushar821999">tushar821999</a></li>
   </ul>
